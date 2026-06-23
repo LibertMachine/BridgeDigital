@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bridge Digital | Websites for Local Businesses</title>
+
+  <style>
+    :root {
+      --navy: #0f172a;
+      --blue: #2563eb;
+      --gold: #f5b942;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--light);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 90vh;
+      background:
+        linear-gradient(rgba(15,23,42,.85), rgba(15,23,42,.85)),
+        radial-gradient(circle at top, #2563eb, #0f172a);
+      color: var(--white);
+      padding: 24px;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: .04em;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 700;
+      opacity: .9;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 140px auto 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 7vw, 5rem);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #dbeafe;
+      max-width: 700px;
+      margin: 0 auto 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      margin: 8px;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-secondary {
+      border: 2px solid var(--white);
+      color: var(--white);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 24px;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 48px;
+      color: var(--gray);
+      font-size: 1.1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 28px;
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(15,23,42,.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      color: var(--gray);
+    }
+
+    .portfolio {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .portfolio .section-intro {
+      color: #cbd5e1;
+    }
+
+    .portfolio .card {
+      background: #1e293b;
+      color: var(--white);
+    }
+
+    .portfolio .card p {
+      color: #cbd5e1;
+    }
+
+    .cta {
+      text-align: center;
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 32px;
+      padding: 60px 24px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 24px;
+      color: #dbeafe;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px;
+      color: var(--gray);
+    }
+
+    @media (max-width: 800px) {
+      nav {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .nav-links a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        margin-top: 90px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Bridge <span>Digital</span></div>
+
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Your website should be working while you sleep.</h1>
+      <p>
+        Bridge Digital builds clean, modern websites for small businesses that need more leads,
+        better first impressions, and tools that actually help them grow.
+      </p>
+
+      <a class="btn btn-primary" href="#contact">Start a Project</a>
+      <a class="btn btn-secondary" href="#work">See Our Work</a>
+    </div>
+  </header>
+
+  <section id="services">
+    <h2 class="section-title">Websites built for real businesses.</h2>
+    <p class="section-intro">
+      Not just pretty pages. We build websites that explain what you do, capture leads,
+      and make your business easier to trust.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Small Business Websites</h3>
+        <p>Modern one-page or multi-page websites for contractors, service businesses, shops, clubs, and startups.</p>
+      </div>
+
+      <div class="card">
+        <h3>Lead Capture Forms</h3>
+        <p>Contact forms, quote requests, waitlists, early-access forms, and simple customer intake flows.</p>
+      </div>
+
+      <div class="card">
+        <h3>AI Chat Assistants</h3>
+        <p>Simple website assistants that answer common questions and guide visitors toward contacting you.</p>
+      </div>
+    </div>
+  </section>
+<section id="packages">
+  <h2 class="section-title">Website packages.</h2>
+  <p class="section-intro">
+    Simple starter options for small businesses that need a cleaner online presence.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Starter Site</h3>
+      <p><strong>$500+</strong></p>
+      <p>Perfect for a simple one-page website with your services, contact info, and call-to-action.</p>
+    </div>
+
+    <div class="card">
+      <h3>Business Site</h3>
+      <p><strong>$1,000+</strong></p>
+      <p>A stronger multi-section website with service pages, lead capture forms, and better storytelling.</p>
+    </div>
+
+    <div class="card">
+      <h3>Growth Site</h3>
+      <p><strong>$1,500+</strong></p>
+      <p>For businesses that want a polished site, AI chat assistant, quote flow, and stronger conversion setup.</p>
+    </div>
+  </div>
+</section>
+  <section class="portfolio" id="work">
+    <h2 class="section-title">Starter portfolio.</h2>
+    <p class="section-intro">
+      A few example projects showing the kind of brands and businesses Bridge Digital can help build.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Paradise Outdoor Care</h3>
+        <p>A service-business website built around recurring outdoor cleaning and customer convenience.</p>
+      </div>
+
+      <div class="card">
+        <h3>Libert Elevation System</h3>
+        <p>A product website for a modular workholding concept focused on setup time and shop efficiency.</p>
+      </div>
+
+      <div class="card">
+        <h3>Valley Union FC</h3>
+        <p>A community-first soccer club concept with branding, messaging, and supporter energy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="cta">
+      <h2 class="section-title">Ready to build something better?</h2>
+      <p>
+        Tell us what your business does, what your current website is missing,
+        and what kind of customers you want to reach.
+      </p>
+
+      <a class="btn btn-primary" href="mailto:your-email@example.com">Email Bridge Digital</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Bridge Digital. Built in the Fox Valley.
+  </footer>
+
+</body>
+</html>
