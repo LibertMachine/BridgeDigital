@@ -16,27 +16,7 @@
   --white: #fffaf0;
   --gray: #6b5f57;
 }
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
 
-.hero-card {
-  max-width: 700px;
-  margin: 0 auto 40px;
-}
-
-.hero-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(0,0,0,.25);
-}
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
     body {
       font-family: Arial, sans-serif;
@@ -44,7 +24,38 @@
       color: var(--navy);
       line-height: 1.6;
     }
+.hero {
+  max-width: 1100px;
+  margin: 130px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px;
+  align-items: center;
+}
 
+.hero-text {
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #dbeafe;
+  max-width: 620px;
+  margin-bottom: 32px;
+}
+
+.hero-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(0,0,0,.35);
+}
     header {
   min-height: 90vh;
   background:
@@ -218,6 +229,15 @@
         grid-template-columns: 1fr;
       }
     }
+    .hero {
+  grid-template-columns: 1fr;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.hero-text {
+  text-align: center;
+}
   </style>
 </head>
 
