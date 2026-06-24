@@ -191,7 +191,30 @@
     .portfolio .card p {
       color: #cbd5e1;
     }
+.portfolio-preview {
+  overflow: hidden;
+  padding: 0;
+}
 
+.portfolio-preview img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-preview-content {
+  padding: 22px;
+}
+
+.portfolio-preview h3 {
+  margin-bottom: 10px;
+}
+
+.portfolio-preview:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
     .cta {
       text-align: center;
       background: var(--maroon);
@@ -282,22 +305,6 @@
       and make your business easier to trust.
     </p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Small Business Websites</h3>
-        <p>Modern one-page or multi-page websites for contractors, service businesses, shops, clubs, and startups.</p>
-      </div>
-
-      <div class="card">
-        <h3>Lead Capture Forms</h3>
-        <p>Contact forms, quote requests, waitlists, early-access forms, and simple customer intake flows.</p>
-      </div>
-
-      <div class="card">
-        <h3>AI Chat Assistants</h3>
-        <p>Simple website assistants that answer common questions and guide visitors toward contacting you.</p>
-      </div>
-    </div>
   </section>
 <section id="packages">
   <h2 class="section-title">Website packages.</h2>
@@ -331,22 +338,31 @@
       A few example projects showing the kind of brands and businesses Bridge Digital can help build.
     </p>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Paradise Outdoor Care</h3>
-        <p>A service-business website built around recurring outdoor cleaning and customer convenience.</p>
-      </div>
+    <div class="card portfolio-preview">
+    <img src="ParadisePreview.png" alt="Paradise Outdoor Care">
 
-      <div class="card">
-        <h3>Libert Elevation System</h3>
-        <p>A product website for a modular workholding concept focused on setup time and shop efficiency.</p>
-      </div>
-
-      <div class="card">
-        <h3>Valley Union FC</h3>
-        <p>A community-first soccer club concept with branding, messaging, and supporter energy.</p>
-      </div>
+    <div class="portfolio-preview-content">
+      <h3>Paradise Outdoor Care</h3>
     </div>
+  </div>
+
+  <div class="card portfolio-preview">
+    <img src="LibertPreview.png" alt="Libert Elevation System">
+
+    <div class="portfolio-preview-content">
+      <h3>Libert Elevation System</h3>
+    </div>
+  </div>
+
+  <div class="card portfolio-preview">
+    <img src="VUFCPreview.png" alt="Valley Union FC">
+
+    <div class="portfolio-preview-content">
+      <h3>Valley Union FC</h3>
+    </div>
+  </div>
+
+</div>
   </section>
 
   <section id="contact">
